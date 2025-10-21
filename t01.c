@@ -29,7 +29,7 @@ int main()
 	     
 	       for(i=0;i<n;i++)
 	       {
-     	        for(j=0;j<n;j++)
+     	        for(j=0;j<i;j++)
 	            {
      	              if(i==j)
 					  {
@@ -38,7 +38,10 @@ int main()
 					    	
 					     if(i!=j)
 					     {
+					     	  g= T[i][j];
+					    
 					  	      T[i][j]=T[j][i];
+					  	      T[j][i]=g;
 					     }
 					    
      		        	
